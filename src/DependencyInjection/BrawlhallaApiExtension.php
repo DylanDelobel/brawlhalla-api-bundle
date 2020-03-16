@@ -23,7 +23,7 @@ class BrawlhallaApiExtension extends  Extension {
 
         $configuration = $this->getConfiguration($configs, $container);
         $config = $this->processConfiguration($configuration, $configs);
-//        var_dump($config);die;
+
         $defintion = $container->getDefinition('dylan_delobel_brawlhalla_api.service.brawlhalla_client');
         $defintion->setArgument(0, $config['api_key']);
     }
