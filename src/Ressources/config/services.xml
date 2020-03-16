@@ -6,7 +6,7 @@
 
     <services>
         <service id="dylan_delobel_brawlhalla_api.service.brawlhalla_client" class="DylanDelobel\BrawlhallaApiBundle\Service\BrawlhallaClient">
-
+            <argument key="$logger" type="service" id="monolog.logger.request"/>
         </service>
         <service id="DylanDelobel\BrawlhallaApiBundle\Service\BrawlhallaClient" alias="dylan_delobel_brawlhalla_api.service.brawlhalla_client" />
     </services>
